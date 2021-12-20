@@ -26,7 +26,7 @@ workspace:
           continue-on-error: true
           directory: /home/coder/
           shell: /bin/bash
-          command: SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item /var/tmp/coder/code-server/bin/code-server --install-extension php-debug        
+          command: SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item /var/tmp/coder/code-server/bin/code-server --install-extension felixfbecker.php-debug        
         - name: set ssh keys and clone for projects
           directory: /home/coder/
           shell: /bin/bash
@@ -53,9 +53,9 @@ workspace:
           command: |
             continue-on-error: true
             cd ~/$REPO_1_PATH
-            /usr/bin/php -S 0.0.0.0:1026 -t .
+            setsid /usr/bin/php -S 0.0.0.0:1026 -t . >/home/coder/phpapp1.log 2>&1 < /home/coder/php.log &
             cd ~/$REPO_2_PATH
-            /usr/bin/php -S 0.0.0.0:1027 -t .                    
+            setsid /usr/bin/php -S 0.0.0.0:1027 -t . >/home/coder/phpapp2.log 2>&1 < /home/coder/php.log &                    
         - name: "install fzf fuzzy find and vim editor"
           directory: /home/coder/
           shell: /bin/bash
