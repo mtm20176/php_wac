@@ -52,6 +52,8 @@ workspace:
           shell: /bin/bash
           command: |
             continue-on-error: true
+            REPO_1_PATH=$HOME/php_helloworld
+            REPO_2_PATH=$HOME/original_php            
             cd $REPO_1_PATH
             setsid /usr/bin/php -S 0.0.0.0:1026 -t . >/home/coder/phpapp1.log 2>&1 < /home/coder/phpapp1.log &
             cd $REPO_2_PATH
