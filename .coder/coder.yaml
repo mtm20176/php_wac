@@ -1,0 +1,77 @@
+version: 0.2
+workspace:
+  type: kubernetes
+  specs:
+    kubernetes:
+      image:
+        value: index.docker.io/marktmilligan/phpstorm:latest
+      container-based-vm:
+        value: false
+      cpu: 
+        value: 4
+      memory:
+        value: 4 
+      disk:
+        value: 10
+      gpu-count:
+        value: 0
+      labels:
+        value:  
+          com.coder.custom.chargeback: "php_team31"
+  configure:
+    start:
+      value:
+        - name: install 1 vscode extensions (vsix) from open vsx
+          continue-on-error: true
+          directory: /home/coder/
+          shell: /bin/bash
+          command: SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item /var/tmp/coder/code-server/bin/code-server --install-extension php-debug        
+        - name: set ssh keys and clone and build (dependencies) for projects
+          directory: /home/coder/
+          shell: /bin/bash
+          command: |
+            continue-on-error: true
+            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+            REPO_1_PATH=$HOME/php_helloworld
+            REPO_2_PATH=$HOME/original_php
+            if [ -d $REPO_1_PATH ]; then
+              echo 'php_helloworld repo already exists - skip clone'
+            else
+              git clone git@github.com:mtm20176/php_helloworld.git 
+              echo 'cloned php_helloworld repo'
+            fi  
+            if [ -d $REPO_2_PATH ]; then
+              echo 'original_php (contact sqlite3 database) repo already exists - skip clone'
+            else
+              git clone git@github.com:mtm20176/original_php.git 
+              echo 'cloned original_php (contact sqlite3 database) repo'
+            fi 
+
+        - name: "install fzf fuzzy find and vim editor"
+          directory: /home/coder/
+          shell: /bin/bash
+          command: |
+            continue-on-error: true
+            if [ -f "/etc/arch-release" ]; then
+              echo "Arch Linux"
+              sudo pacman -S fzf --noconfirm
+              sudo pacman -S vim --noconfirm
+              echo 'installed fzf and nim'
+            elif [ -f "/etc/lsb-release" ]; then
+              echo "Ubuntu" 
+              sudo apt update
+              sudo apt install fzf
+              sudo apt install vim
+              echo 'installed fzf and nim'
+            fi             
+  dev-urls:
+    value:
+      - name: phpapp1
+        port: 1026
+        scheme: http
+        access: org
+    value:
+      - name: phpapp2
+        port: 1027
+        scheme: http
+        access: org        
