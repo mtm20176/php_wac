@@ -6,7 +6,7 @@ workspace:
       image:
         value: index.docker.io/marktmilligan/phpstorm:latest
       container-based-vm:
-        value: false
+        value: true
       cpu: 
         value: 4
       memory:
