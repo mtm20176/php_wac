@@ -53,9 +53,9 @@ workspace:
           command: |
             continue-on-error: true
             cd ~/$REPO_1_PATH
-            setsid /usr/bin/php -S 0.0.0.0:1026 -t . >/home/coder/phpapp1.log 2>&1 < /home/coder/php.log &
+            setsid /usr/bin/php -S 0.0.0.0:1026 -t . >/home/coder/phpapp1.log 2>&1 < /home/coder/phpapp1.log &
             cd ~/$REPO_2_PATH
-            setsid /usr/bin/php -S 0.0.0.0:1027 -t . >/home/coder/phpapp2.log 2>&1 < /home/coder/php.log &                    
+            setsid /usr/bin/php -S 0.0.0.0:1027 -t . >/home/coder/phpapp2.log 2>&1 < /home/coder/phpapp2.log &                    
         - name: "install fzf fuzzy find and vim editor"
           directory: /home/coder/
           shell: /bin/bash
