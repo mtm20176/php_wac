@@ -1,4 +1,4 @@
-# PHP Coder template to do define a Coder workspace with a centrally-controlled infrastructure-as-code paradigm
+# PHP Coder template to define a Coder workspace with a centrally-controlled infrastructure-as-code paradigm
 
 ###### clean.demo.coder.com (workspace configuration-as-code)
 [![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/go_php.git&template_ref=main&template_filepath=.coder/coder.yaml)
