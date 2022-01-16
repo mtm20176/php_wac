@@ -1,13 +1,19 @@
-# PHP Coder template to define a Coder workspace with a centrally-controlled infrastructure-as-code paradigm
+# PHP Coder template to define a Coder workspace (similar to devcontainer.json)
 
-###### clean.demo.coder.com (workspace configuration-as-code)
-[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/go_php.git&template_ref=main&template_filepath=.coder/coder.yaml)
+###### clean.demo.coder.com 
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
 
-###### demo-2.cdr.dev (workspace configuration-as-code)
-[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://demo-2.cdr.dev/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/go_php.git&template_ref=main&template_filepath=.coder/coder.yaml)
+###### demo-2.cdr.dev 
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://demo-2.cdr.dev/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
+
+###### latest-rc.demo.coder.com 
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://latest-rc.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
+
+###### mark.coder.com 
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://mark.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
 
 
-###### This is a workspaces as code repo to :
+###### This is a Coder template repo to :
 
 * install a PHP interpreter (v7.4) 
 
