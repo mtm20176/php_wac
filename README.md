@@ -1,5 +1,5 @@
 # A Coder template to define a Coder workspace
-###### The template includes a PHP interpreter, JetBrains PhpStorm IDE, and VS Code PHP debugging and GitHub extensions (Coder templates are similar to Microsoft the devcontainer.json spec)
+###### The template includes a PHP interpreter, a JetBrains PhpStorm IDE, and VS Code PHP debugging and GitHub extensions (Coder templates are similar to Microsoft the devcontainer.json spec)
 
 ###### The business value of this Coder template feature is centralized governance and control over development environments so they are trusted, consistent, and comformant with an enterprise's dev, test and production environments.
 
