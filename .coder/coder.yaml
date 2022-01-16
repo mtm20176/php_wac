@@ -22,7 +22,12 @@ workspace:
   configure:
     start:
       value:
-        - name: install 1 vscode extensions (vsix) from open vsx
+        - name: install GitHub vscode extension (vsix) from open vsx
+          continue-on-error: true
+          directory: /home/coder/
+          shell: /bin/bash
+          command: SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item /var/tmp/coder/code-server/bin/code-server --install-extension KnisterPeter.vscode-github      
+        - name: install PHP Debugger vscode extension (vsix) from open vsx
           continue-on-error: true
           directory: /home/coder/
           shell: /bin/bash
