@@ -1,4 +1,7 @@
-# PHP Coder template to define a Coder workspace (similar to devcontainer.json)
+# A Coder template to define a Coder workspace
+###### The template includes a PHP interpreter, JetBrains PhpStorm IDE, and VS Code PHP debugging and GitHub extensions (Coder templates are similar to Microsoft the devcontainer.json spec)
+
+###### The business value of this Coder template feature is centralized governance and control over development environments so they are trusted, consistent, and comformant with an enterprise's dev, test and production environments.
 
 ###### clean.demo.coder.com 
 [![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
