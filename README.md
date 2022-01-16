@@ -22,13 +22,15 @@
 
 * adds the XDebug debugger settings
 
+* adds VS Code extensions (PHP debugger and GitHub)
+
+* creates 2 dev URLs (how running PHP apps are sharing with colleagues for feature testing)
+
 * includes a sample config.json for VS Code debugging (port 9000)
 
 * install JetBrains' PhpStorm IDE
 
 * clone 2 PHP repos
-
-* add PHP Debugger VS Code extension
 
 
 
