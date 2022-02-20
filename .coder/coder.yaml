@@ -89,4 +89,8 @@ workspace:
       - name: phpapp2
         port: 1027
         scheme: http
-        access: org        
+        access: org 
+      - name: phpapp3
+        port: 1028
+        scheme: http
+        access: org                
