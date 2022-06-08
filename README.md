@@ -4,14 +4,7 @@
 ###### The business value of this Coder template feature is centralized governance and control over development environments so they are trusted, consistent, and comformant with an enterprise's dev, test and production environments.
 
 ###### clean.demo.coder.com 
-[![Open in Coder](https://clean.demo.coder.com/static/image/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=625ff6b7-9e0fbb71f34a2ed66ae5a2e5&template_url=https://github.com/mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
-
-###### demo-2.cdr.dev 
-[![Open in Coder](https://demo-2.cdr.dev/static/image/embed-button.svg)](https://demo-2.cdr.dev/wac/build?template_oauth_service=61bce348-ee6e683e630a68fc349aacfc&template_url=https://github.com/mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
-
-
-###### mark.coder.com 
-[![Open in Coder](https://mark.coder.com/static/image/embed-button.svg)](https://mark.coder.com/wac/build?template_oauth_service=61277737-71f454b243f979e75ab79d9a&template_url=https://github.com/mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
+[![Open in Coder](https://clean.demo.coder.com/static/image/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=625ff6b7-9e0fbb71f34a2ed66ae5a2e5&template_url=git@github.com:mtm20176/php_wac.git&template_ref=main&template_filepath=.coder/coder.yaml)
 
 
 ###### This is a Coder template repo to :
