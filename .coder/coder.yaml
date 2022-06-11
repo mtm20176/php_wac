@@ -43,13 +43,13 @@ workspace:
             if [ -d $REPO_1_PATH ]; then
               echo 'php_helloworld repo already exists - skip clone'
             else
-              git clone git@github.com:mtm20176/php_helloworld.git 
+              git clone git@github.com:mark-theshark/php_helloworld.git 
               echo 'cloned php_helloworld repo'
             fi  
             if [ -d $REPO_2_PATH ]; then
               echo 'original_php (contact sqlite3 database) repo already exists - skip clone'
             else
-              git clone git@github.com:mtm20176/original_php.git 
+              git clone git@github.com:mark-theshark/original_php.git 
               echo 'cloned original_php (contact sqlite3 database) repo'
             fi 
         - name: "start php apps"
